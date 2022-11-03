@@ -25,10 +25,10 @@ module GrapeResponse
   def set_serializer_class(serializer_name)
     serializer_class_name = "#{serializer_name.to_s.camelize}Serializer"
     if controller_path.nil?
-      serializer_class = serializer_class_name
+      self.serializer_class = serializer_class_name
     else
       controller_name = controller_path.classify
-      serializer_class = controller_name.gsub(/Api::(\w+)::\S+$/, "Api::#{'\1'}::#{serializer_class_name}")
+      self.serializer_class = controller_name.gsub(/Api::(\w+)::\S+$/, "Api::#{'\1'}::#{serializer_class_name}")
     end
     serializer_class
   end

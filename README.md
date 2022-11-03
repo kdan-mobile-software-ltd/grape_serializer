@@ -44,7 +44,7 @@ class TestSerializer < GrapeSerializer
   entity TestEntity
 
   def association_array
-    ...
+    [...]
   end
 end
 ```

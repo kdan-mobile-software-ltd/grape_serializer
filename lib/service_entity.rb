@@ -1,3 +1,5 @@
+require 'grape-entity'
+
 class ServiceEntity < Grape::Entity
 
   # expose service additional info by default
