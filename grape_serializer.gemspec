@@ -7,8 +7,9 @@ Gem::Specification.new do |s|
   s.authors     = ["JiaRou Lee"]
   s.email       = "laura34963@kdanmobile.com"
   s.files       = Dir["lib/**/*"]
+  s.require_path     = ["lib"]
   s.homepage    = "https://github.com/kdan-mobile-software-ltd/grape_serializer"
   s.license     = "MIT"
 
-  s.add_development_dependency 'grape-entity', '~> 0.10.2'
+  s.add_runtime_dependency 'grape-entity', '~> 0.10.2'
 end
