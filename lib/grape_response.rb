@@ -9,9 +9,11 @@ module GrapeResponse
   private
 
   def current_member
+    super
   end
 
   def controller_path
+    super
   end
 
   def serializer_class
