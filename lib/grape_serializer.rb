@@ -16,7 +16,7 @@ class GrapeSerializer
   end
 
   def represent(resource, opts = {})
-    preload_associations(resource) if defined?(::Rails::Engine) && defined?(::ActiveRecord) && resource.is_a?(ActiveRecord)
+    preload_associations(resource) if defined?(::Rails::Engine) && defined?(::ActiveRecord) && (resource.is_a?(ActiveRecord::Base) || resource.is_a?(ActiveRecord::Relation))
     self.class.entity_class.represent(resource, opts.merge(@params)).as_json
   end
 
