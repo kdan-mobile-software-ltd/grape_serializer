@@ -1,5 +1,6 @@
 require 'grape_response'
 require 'service_entity'
+require 'list_entity'
 
 class GrapeSerializer
 

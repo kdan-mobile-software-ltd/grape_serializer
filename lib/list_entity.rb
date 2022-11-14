@@ -1,9 +1,11 @@
 class ListEntity < ServiceEntity
 
   def self.inherited(subclass)
-    expose :total_count
-    expose :current_page
-    expose :total_pages
+    subclass.present_collection true
+
+    subclass.expose :total_count
+    subclass.expose :current_page
+    subclass.expose :total_pages
   end
 
   private
