@@ -4,8 +4,10 @@ class ListEntity < ServiceEntity
     subclass.present_collection true
 
     subclass.expose :total_count
-    subclass.expose :current_page
-    subclass.expose :total_pages
+    if pagination_items.respond_to?(:current_page)
+      subclass.expose :current_page
+      subclass.expose :total_pages
+    end
   end
 
   private
@@ -15,7 +17,11 @@ class ListEntity < ServiceEntity
   end
 
   def total_count
-    pagination_items.total_count
+    if pagination_items.respond_to?(:total_count)
+      pagination_items.total_count
+    elsif pagination_items.is_a?(Array)
+      pagination_items.length
+    end
   end
 
   def current_page
