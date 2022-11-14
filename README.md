@@ -20,6 +20,7 @@ $ bundle install
 
 ### Entity
 * single resource
+
 Inherit `ServiceEntity`
 
 ```ruby
@@ -36,6 +37,7 @@ end
 ```
 
 * multiple resources
+
 Inherit `ListEntity`
 
 ```ruby
