@@ -10,6 +10,7 @@ module GrapeResponse
 
   def current_member
     super
+  rescue NoMethodError
   end
 
   def controller_path
