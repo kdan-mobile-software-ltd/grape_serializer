@@ -12,12 +12,12 @@ class ServiceEntity < Grape::Entity
 
   def service_info
     service = options[:service]
-    service_name = service.class.name.underscore
+    service_name = options[:service_name] || service.class.name.underscore
     send(service_name) rescue nil || send(service_name.split('/').last) rescue {}
   end
 
   def append_info
     options[:append]
   end
-  
+
 end
