@@ -25,7 +25,7 @@ class GrapeSerializer
 
   def preload_associations(resource)
     if Rails::VERSION::MAJOR >= 7
-      ActiveRecord::Associations::Preloader.new.preload(records: [resource].flatten, associations: association_array)
+      ActiveRecord::Associations::Preloader.new(records: [resource].flatten, associations: association_array).call
     else
       ActiveRecord::Associations::Preloader.new.preload(resource, association_array)
     end
