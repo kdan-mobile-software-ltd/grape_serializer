@@ -6,8 +6,14 @@
 
 Add `grape_serializer` to your Rails application's `Gemfile`.
 
+### For Rails < 7
 ```ruby
-gem 'grape_serializer'
+gem 'grape_serializer', '~> 0.1.0'
+```
+
+### For Rails >= 7
+```ruby
+gem 'grape_serializer', '~> 1.0.0'
 ```
 
 And then install the gem.

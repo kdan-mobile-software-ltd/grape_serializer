@@ -11,5 +11,9 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/kdan-mobile-software-ltd/grape_serializer"
   s.license     = "MIT"
 
-  s.add_runtime_dependency 'grape-entity', '~> 0.10.2'
+  if defined?(::Rails::Engine) && Rails::VERSION::MAJOR >= 7
+    s.add_runtime_dependency 'grape-entity', '~> 1.0.0'
+  else
+    s.add_runtime_dependency 'grape-entity', '~> 0.10.2'
+  end
 end
