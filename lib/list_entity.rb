@@ -33,8 +33,8 @@ class ListEntity < ServiceEntity
   def total_pages
     if pagination_items.respond_to?(:total_pages)
       pagination_items.total_pages
-    else
-      1
+    elsif pagination_items.is_a?(Array)
+      pagination_items.length.zero? ? 0 : 1
     end
   end
   
