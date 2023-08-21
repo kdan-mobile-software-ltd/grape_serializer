@@ -34,7 +34,7 @@ class ListEntity < ServiceEntity
     if pagination_items.respond_to?(:total_pages)
       pagination_items.total_pages
     else
-      0
+      1
     end
   end
   
