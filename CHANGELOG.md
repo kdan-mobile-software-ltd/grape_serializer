@@ -1,3 +1,5 @@
+## [1.0.4]
+- Add MIT License.
 ## [1.0.3]
 - Change default total_pages for list_entity from 0 to 0 or 1.
 ## [1.0.2] / [1.0.1] / [1.0.0]
