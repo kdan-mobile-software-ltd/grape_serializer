@@ -1,3 +1,8 @@
+## [1.0.3]
+- Change default total_pages for list_entity from 0 to 0 or 1.
+## [1.0.2] / [1.0.1] / [1.0.0]
+- Update preload for rails 7.
+- Allow to access options in serializer.
 ## [0.1.2] - 2023-05-18
 - Add gitlab templates.
 - Update gemspec.
