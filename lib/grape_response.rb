@@ -1,7 +1,7 @@
 module GrapeResponse
 
   def serialize_response(serializer_name, resource, **options)
-    set_serializer_class(serializer_name)
+    set_serializer_class(serializer_name) if serializer_class.nil?
     serializer = serializer_class.new(current_member: current_member)
     render status: 200, json: {data: serializer.represent(resource, options)}
   end

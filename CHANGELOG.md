@@ -1,3 +1,5 @@
+## [1.0.5]
+- Allow to set custom serializer_class.
 ## [1.0.4]
 - Add MIT License.
 ## [1.0.3]
