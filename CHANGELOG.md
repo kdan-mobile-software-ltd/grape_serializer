@@ -1,3 +1,5 @@
+## [1.0.6]
+- Fix grape-entity version to 1.0.1.
 ## [1.0.5]
 - Allow to set custom serializer_class.
 ## [1.0.4]
