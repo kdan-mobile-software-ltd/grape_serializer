@@ -1,5 +1,6 @@
 ## [1.0.6]
 - Fix grape-entity version to 1.0.1.
+- Update CI to use Ruby 3.4.5.
 ## [1.0.5]
 - Allow to set custom serializer_class.
 ## [1.0.4]
