@@ -1,6 +1,6 @@
 # Grape Serializer
 
-`Grape Serializer` is a serializer gem which base on grape-entity gem
+`Grape Serializer` is a serializer gem which base on grape-entity gem.
 
 ## Installation
 
