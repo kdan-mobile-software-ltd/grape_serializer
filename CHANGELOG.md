@@ -1,3 +1,7 @@
+## [1.1.0]
+- Fix gemspec conditional so grape-entity resolves to 1.x (the Rails-version guard never loaded under Bundler).
+- Bump grape-entity constraint to `~> 1.1.0`.
+- Update bundled dependencies to resolve activesupport (CVE-2026-33176) and uri (CVE-2025-61594) advisories.
 ## [1.0.6]
 - Lock grape-entity version to 1.0.1.
 - Update CI to use Ruby 3.4.5.

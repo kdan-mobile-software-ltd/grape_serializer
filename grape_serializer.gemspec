@@ -16,9 +16,5 @@ Gem::Specification.new do |s|
     "changelog_uri" => "https://github.com/kdan-mobile-software-ltd/grape_serializer/blob/master/CHANGELOG.md"
   }
 
-  if defined?(::Rails::Engine) && Rails::VERSION::MAJOR >= 7
-    s.add_runtime_dependency 'grape-entity', '~> 1.0.1'
-  else
-    s.add_runtime_dependency 'grape-entity', '~> 0.10.2'
-  end
+  s.add_runtime_dependency 'grape-entity', '~> 1.1.0'
 end
