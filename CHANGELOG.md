@@ -1,3 +1,5 @@
+## [1.1.1]
+- Update `concurrent-ruby` to `1.3.7` to address CVE-2026-54906 (ReadWriteLock unauthorized lock release, CRITICAL) and CVE-2026-54904 (AtomicReference#update infinite loop, HIGH).
 ## [1.1.0]
 - Fix gemspec conditional so grape-entity resolves to 1.x (the Rails-version guard never loaded under Bundler).
 - Bump grape-entity constraint to `~> 1.1.0`.
